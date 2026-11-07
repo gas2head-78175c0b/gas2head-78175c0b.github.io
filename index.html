@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>鉴黄师-鉴黄师工作内容_审核流程_职业前景与入行要求</title>
+<meta name="description" content="鉴黄师是负责内容安全审核的一线岗位，本文围绕鉴黄师的工作内容、审核流程、入行要求、薪资前景与常见误区展开，梳理鉴黄师日常审核标准、平台合规要点与从业者真实体验，帮助想了解鉴黄师职业的人快速建立完整认知。">
+<meta name="keywords" content="鉴黄师,鉴黄师工作内容,鉴黄师入行要求,内容审核员,鉴黄师职业前景">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M32 12l16 8v14c0 10-7 16-16 18-9-2-16-8-16-18V20z' fill='none' stroke='%2338bdf8' stroke-width='3'/%3E%3Cpath d='M24 32l6 6 11-12' fill='none' stroke='%2334d399' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f5f7fb;
+  --bg-soft:#ffffff;
+  --ink:#111827;
+  --ink-2:#374151;
+  --ink-3:#6b7280;
+  --line:#e5e7eb;
+  --brand:#155e75;
+  --brand-2:#0e7490;
+  --accent:#0ea5a4;
+  --accent-soft:#e0f7f6;
+  --warn:#b45309;
+  --radius:16px;
+  --shadow:0 6px 24px rgba(15,23,42,.07);
+  --shadow-hover:0 14px 34px rgba(15,23,42,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 14px}
+ul{margin:0;padding:0;list-style:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* 顶部导航 */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;align-items:center;gap:18px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
+.logo-mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#155e75,#0ea5a4);position:relative;flex:none}
+.logo-mark::after{content:"";position:absolute;left:8px;top:13px;width:14px;height:3px;border-radius:2px;background:#e6fffb;box-shadow:0 0 0 0 transparent}
+.logo-mark::before{content:"";position:absolute;left:8px;top:9px;width:14px;height:3px;border-radius:2px;background:#a7f3d0}
+.logo b{font-size:17px;color:#0f172a}
+.logo span{font-size:11px;color:var(--ink-3);font-weight:500}
+.nav{display:flex;gap:4px;margin-left:8px;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-size:14px;color:var(--ink-2);padding:7px 11px;border-radius:9px;white-space:nowrap;transition:.18s}
+.nav a:hover{background:var(--accent-soft);color:var(--brand)}
+.topbar-cta{flex:none;font-size:13px;padding:8px 16px;border-radius:10px;background:var(--brand);color:#fff;font-weight:600;transition:.18s}
+.topbar-cta:hover{background:var(--brand-2)}
+
+/* Banner */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(900px 380px at 12% -10%,#cffafe 0%,transparent 60%),
+  radial-gradient(700px 320px at 92% 0%,#dcfce7 0%,transparent 55%),
+  linear-gradient(180deg,#f8fbfd,#eef6f8);
+  border-bottom:1px solid var(--line)}
+.hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;padding:52px 0 46px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--brand);background:#fff;border:1px solid #cce9ee;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+.hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;box-shadow:0 0 0 4px rgba(14,165,164,.16)}
+.hero h1{font-size:40px;letter-spacing:-.5px;color:#0b2230;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--brand-2);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:3px;height:9px;background:rgba(14,165,164,.18);border-radius:4px;z-index:-1}
+.hero-sub{font-size:15.5px;color:var(--ink-2);max-width:560px}
+.hero-sub p{margin-bottom:8px}
+.searchbar{display:flex;gap:10px;margin:22px 0 18px;max-width:560px}
+.searchbar input{flex:1;height:48px;border-radius:12px;border:1px solid #cfe3e8;background:#fff;padding:0 16px;font-size:14.5px;color:var(--ink);outline:none;transition:.18s}
+.searchbar input:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(14,165,164,.12)}
+.searchbar button{height:48px;padding:0 24px;border:none;border-radius:12px;background:linear-gradient(135deg,#155e75,#0e7490);color:#fff;font-size:14.5px;font-weight:600;cursor:pointer;transition:.18s}
+.searchbar button:hover{filter:brightness(1.08)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-tags a{font-size:13px;padding:6px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink-2);transition:.18s}
+.hero-tags a:hover{border-color:var(--accent);color:var(--brand);background:var(--accent-soft)}
+.hero-card{background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:22px;border:1px solid #e8f1f4}
+.hero-card h3{font-size:15px;margin-bottom:14px;color:#0b2230;display:flex;align-items:center;gap:8px}
+.hero-card h3::before{content:"";width:4px;height:15px;border-radius:3px;background:var(--accent)}
+.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.metric{background:#f6fafb;border-radius:12px;padding:12px 10px;text-align:center}
+.metric b{display:block;font-size:20px;color:var(--brand);line-height:1.2}
+.metric span{font-size:11.5px;color:var(--ink-3)}
+.hero-list li{display:flex;gap:10px;font-size:13.5px;color:var(--ink-2);padding:9px 0;border-top:1px dashed var(--line)}
+.hero-list li:first-child{border-top:none}
+.hero-list b{color:var(--brand-2);font-weight:700;flex:none}
+
+/* 通用 section */
+section{padding:46px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.sec-head h2{font-size:26px;color:#0b2230;letter-spacing:-.3px}
+.sec-head h2 span{color:var(--brand-2)}
+.sec-head p{font-size:13.5px;color:var(--ink-3);margin:0;max-width:640px}
+.sec-more{font-size:13.5px;color:var(--brand);font-weight:600;white-space:nowrap}
+.sec-more:hover{color:var(--accent)}
+
+/* 分类入口 */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:.2s;display:block}
+.cat:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#bfe6ea}
+.cat i{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:11px;background:var(--accent-soft);color:var(--brand);font-style:normal;font-weight:800;font-size:15px;margin-bottom:12px}
+.cat b{display:block;font-size:15px;margin-bottom:4px}
+.cat span{font-size:12.5px;color:var(--ink-3);line-height:1.6}
+
+/* 卡片网格 */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#cfe9ec}
+.card-cover{height:132px;position:relative;display:flex;align-items:flex-end;padding:14px;color:#fff;font-weight:700;font-size:15px;letter-spacing:.5px}
+.card-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.35))}
+.card-cover span{position:relative;z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.c1{background:linear-gradient(135deg,#0f766e,#0e7490)}
+.c2{background:linear-gradient(135deg,#1e3a8a,#0e7490)}
+.c3{background:linear-gradient(135deg,#4c1d95,#7c3aed)}
+.c4{background:linear-gradient(135deg,#b45309,#d97706)}
+.c5{background:linear-gradient(135deg,#0f172a,#334155)}
+.c6{background:linear-gradient(135deg,#065f46,#059669)}
+.c7{background:linear-gradient(135deg,#831843,#be185d)}
+.c8{background:linear-gradient(135deg,#164e63,#0891b2)}
+.c9{background:linear-gradient(135deg,#3f3f46,#71717a)}
+.card-body{padding:15px 16px 17px;display:flex;flex-direction:column;flex:1}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:9px}
+.tag{font-size:11.5px;padding:3px 9px;border-radius:999px;background:#f1f5f9;color:var(--ink-2)}
+.tag.hot{background:#fef3c7;color:#92400e}
+.tag.new{background:#dcfce7;color:#166534}
+.card-body h3{font-size:15.5px;margin-bottom:7px;color:#0b2230}
+.card-body p{font-size:13px;color:var(--ink-3);margin-bottom:12px;flex:1;line-height:1.7}
+.card-meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:10px}
+.card-meta b{color:var(--brand-2);font-weight:700}
+
+/* 列表更新 */
+.updates{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.updates li{display:grid;grid-template-columns:82px 1fr auto;gap:14px;align-items:center;padding:14px 18px;border-bottom:1px solid #f1f5f9;transition:.16s}
+.updates li:last-child{border-bottom:none}
+.updates li:hover{background:#f8fdfd}
+.updates .t{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.updates .n{font-size:14.5px;font-weight:600;color:#0b2230}
+.updates .n small{display:block;font-weight:400;font-size:12.5px;color:var(--ink-3);margin-top:2px}
+.updates .s{font-size:11.5px;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--brand);white-space:nowrap}
+
+/* 深度解析正文 */
+.article{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 32px}
+.article h3{font-size:19px;margin:26px 0 10px;color:#0b2230;padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.article h3:first-child{margin-top:0}
+.article p{font-size:14.8px;color:var(--ink-2);line-height:1.9}
+.article strong{color:var(--brand)}
+.article ul.dots{margin:0 0 16px;padding-left:2px}
+.article ul.dots li{position:relative;padding-left:18px;font-size:14.6px;color:var(--ink-2);line-height:1.9;margin-bottom:4px}
+.article ul.dots li::before{content:"";position:absolute;left:2px;top:12px;width:6px;height:6px;border-radius:2px;background:var(--accent)}
+
+/* 数据看板 */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{background:linear-gradient(160deg,#ffffff,#f4fbfc);border:1px solid #e2eff1;border-radius:var(--radius);padding:20px;text-align:center}
+.stat b{display:block;font-size:26px;color:var(--brand);letter-spacing:-.5px;line-height:1.2}
+.stat span{font-size:12.5px;color:var(--ink-3)}
+
+/* FAQ 手风琴 */
+.faq{display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:0 18px;transition:.18s}
+.faq details[open]{border-color:#bfe6ea;box-shadow:var(--shadow)}
+.faq summary{cursor:pointer;list-style:none;font-size:15px;font-weight:600;color:#0b2230;padding:16px 0;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:20px;color:var(--accent);font-weight:400;transition:.2s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .ans{font-size:14px;color:var(--ink-2);padding:0 0 18px;line-height:1.85}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{width:32px;height:32px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;background:linear-gradient(135deg,#0e7490,#0ea5a4)}
+.cmt-top b{font-size:13.5px;color:#0b2230}
+.cmt-top time{margin-left:auto;font-size:11.5px;color:var(--ink-3)}
+.cmt p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.8}
+.cmt .like{font-size:11.5px;color:var(--ink-3);margin-top:8px;display:inline-block}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.news-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;transition:.2s}
+.news-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.news-card time{font-size:12px;color:var(--accent);font-weight:600}
+.news-card h3{font-size:15px;margin:8px 0 8px;color:#0b2230;line-height:1.5}
+.news-card p{font-size:13px;color:var(--ink-3);margin:0;line-height:1.7}
+
+/* 订阅 */
+.subscribe{background:linear-gradient(135deg,#0f3f4a,#0e7490);border-radius:22px;padding:36px;color:#e6fffb;display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}
+.subscribe h2{font-size:24px;color:#fff;margin-bottom:10px}
+.subscribe p{font-size:14px;color:#b7e6ef;margin:0}
+.sub-form{display:flex;gap:10px}
+.sub-form input{flex:1;height:46px;border-radius:11px;border:none;padding:0 14px;font-size:14px;outline:none}
+.sub-form button{height:46px;padding:0 22px;border:none;border-radius:11px;background:#a7f3d0;color:#064e3b;font-weight:700;font-size:14px;cursor:pointer}
+
+/* 页脚 */
+footer{background:#0b1a20;color:#9fb6bd;padding:44px 0 26px;margin-top:10px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.foot-brand h3{color:#fff;font-size:16px;margin-bottom:10px}
+.foot-brand p{font-size:13px;color:#8aa5ac;line-height:1.8;margin-bottom:8px}
+.foot-col h4{color:#dbecef;font-size:13.5px;margin-bottom:12px}
+.foot-col li{margin-bottom:8px}
+.foot-col a{font-size:13px;color:#8aa5ac;transition:.16s}
+.foot-col a:hover{color:#a7f3d0}
+.foot-bottom{border-top:1px solid #1b2f36;margin-top:28px;padding-top:18px;font-size:12.5px;color:#718a92;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+@media(max-width:980px){
+  .hero-in{grid-template-columns:1fr;padding:36px 0 32px}
+  .hero h1{font-size:30px}
+  .grid-3,.cats,.news{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .subscribe{grid-template-columns:1fr;padding:26px}
+  .foot-grid{grid-template-columns:repeat(2,1fr)}
+  .nav{display:none}
+}
+@media(max-width:640px){
+  body{font-size:15px}
+  .hero h1{font-size:25px}
+  .grid-3,.grid-2,.cats,.news,.comments{grid-template-columns:1fr}
+  .article{padding:22px 18px}
+  .sec-head h2{font-size:21px}
+  .updates li{grid-template-columns:1fr auto;gap:6px}
+  .updates .t{grid-column:1/-1}
+  .searchbar{flex-direction:column}
+  .searchbar button{width:100%}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-card{padding:18px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="logo" href="/#top">
+      <span class="logo-mark"></span>
+      <span><b>鉴黄师观察站</b><br><span>内容安全审核 · 职业百科</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#update">最新动态</a>
+      <a href="/#cats">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#data">数据看板</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <a class="topbar-cta" href="/#subscribe">收藏本页</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Banner -->
+  <div class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <span class="hero-badge"><i></i>2026年11月7日 更新 · 内容安全审核专题</span>
+        <h1>鉴黄师：<em>内容审核</em>一线岗位的完整工作图谱</h1>
+        <div class="hero-sub">
+          <p>鉴黄师并不是一个猎奇标签，而是平台内容安全体系里最基础、也最关键的一道人工防线。</p>
+          <p>这里从审核标准、工作流程、入行门槛、薪资与职业前景出发，把鉴黄师这份工作讲清楚、讲透。</p>
+        </div>
+        <form class="searchbar" onsubmit="return false;">
+          <input type="text" placeholder="搜索：鉴黄师工作内容 / 入行要求 / 审核流程 / 职业前景">
+          <button type="button">搜索专题</button>
+        </form>
+        <div class="hero-tags">
+          <a href="/#deep">工作内容</a>
+          <a href="/#guide">审核流程</a>
+          <a href="/#data">薪资前景</a>
+          <a href="/#faq">入行门槛</a>
+          <a href="/#cats">岗位分类</a>
+          <a href="/#hot">真实体验</a>
+          <a href="/#news">行业动态</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h3>鉴黄师岗位速览</h3>
+        <div class="hero-metrics">
+          <div class="metric"><b>3班</b><span>常见轮班制</span></div>
+          <div class="metric"><b>千条+</b><span>日均审核量</span></div>
+          <div class="metric"><b>4类</b><span>典型审核对象</span></div>
+        </div>
+        <ul class="hero-list">
+          <li><b>01</b><span>主要工作：对图文、视频、直播画面做违规识别与判定</span></li>
+          <li><b>02</b><span>核心能力：标准记忆、边界判断、心理承受与记录规范</span></li>
+          <li><b>03</b><span>常见去向：内容平台、审核外包公司、安全风控团队</span></li>
+          <li><b>04</b><span>发展路径：审核员 → 质检/培训 → 审核组长 → 风控策略</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <!-- 内容简介 -->
+  <section id="intro">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师是什么：<span>先把岗位讲明白</span></h2>
+          <p>很多搜索"鉴黄师"的人，其实想知道的是这份工作到底做什么、累不累、能不能长期做。</p>
+        </div>
+        <a class="sec-more" href="/#deep">阅读深度解析 →</a>
+      </div>
+      <div class="article">
+        <p>鉴黄师，是内容平台对"不良信息人工审核岗位"的通俗叫法，正式岗位名称多为内容审核员、安全审核专员、信息审核员。它的工作对象并不只是涉黄内容，还包括暴力血腥、违禁品、涉赌涉诈、未成年人不当内容、侵权与隐私泄露等多类风险信息。可以说，鉴黄师是平台内容安全体系中最贴近真实用户内容的一环。</p>
+        <p>这个岗位的核心不是"看到什么"，而是"判断什么"。同一张图片，在不同场景、不同上下文、不同平台规则下，结论可能完全不同。因此鉴黄师真正依赖的是三样东西：清晰的审核标准、稳定的判定尺度、以及可追溯的记录习惯。标准记不牢，判定就会飘；尺度不稳定，团队之间就会出现分歧；记录不规范，后续申诉和复核就无从谈起。</p>
+        <p>本页适合三类人阅读：一是正在考虑投递内容审核岗位的求职者，想了解鉴黄师工作内容与入行要求；二是刚入行不久的新人，需要一套完整的审核流程参考；三是对内容安全行业感兴趣的研究者与内容创作者，希望理解平台规则背后的逻辑。页面按"岗位认知—工作内容—审核流程—职业前景—常见问题"的顺序组织，你可以从头读，也可以直接跳到关心的栏目。</p>
+        <p>需要提前说明的是，鉴黄师不是一个轻松的岗位。长时间高强度接触负面内容，对心理耐受度是真实考验；轮班制、绩效量化、判定争议也会带来持续压力。把这些讲清楚，比单纯渲染"神秘职业"更有价值，也更能帮读者做出适合自己的判断。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section id="cats">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师岗位分类<span>入口</span></h2>
+          <p>按审核对象与工作形态拆分，不同方向的日常内容差别很大。</p>
+        </div>
+      </div>
+      <div class="cats">
+        <a class="cat" href="/#hot"><i>图</i><b>图片审核</b><span>静态图像识别，判定尺度最细，最考验标准记忆</span></a>
+        <a class="cat" href="/#hot"><i>视</i><b>视频审核</b><span>按帧抽检与整段回看，节奏强、单条耗时长</span></a>
+        <a class="cat" href="/#hot"><i>播</i><b>直播巡查</b><span>实时性最高，需要在几秒内做出处置判断</span></a>
+        <a class="cat" href="/#hot"><i>文</i><b>文本审核</b><span>覆盖评论、私信、简介，侧重语义与暗语识别</span></a>
+        <a class="cat" href="/#guide"><i>质</i><b>质检复核</b><span>对已判内容二次抽检，纠正尺度偏差</span></a>
+        <a class="cat" href="/#guide"><i>策</i><b>策略运营</b><span>制定规则、优化模型、分析误判与漏判</span></a>
+        <a class="cat" href="/#data"><i>培</i><b>培训带教</b><span>新人标准培训、案例库建设与考核</span></a>
+        <a class="cat" href="/#faq"><i>外</i><b>外包审核</b><span>承接平台委外任务，规模大、流动性高</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门推荐 -->
+  <section id="hot">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师热门<span>关注内容</span></h2>
+          <p>围绕岗位认知、真实体验与职业选择，整理了 9 个高频关注点。</p>
+        </div>
+        <a class="sec-more" href="/#deep">更多解析 →</a>
+      </div>
+      <div class="grid-3">
+
+        <article class="card">
+          <div class="card-cover c1"><span>审核标准怎么记</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag hot">高频</span><span class="tag">标准</span><span class="tag">新人</span></div>
+            <h3>鉴黄师审核标准记忆法</h3>
+            <p>从"分级判定+场景豁免+边界案例"三层结构入手，把厚厚一本规范压缩成可复用的判断框架，避免死记硬背。</p>
+            <div class="card-meta"><span>适合：新人入门</span><b>关注 8.7k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c2"><span>一天审多少条</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag">工作量</span><span class="tag">绩效</span><span class="tag hot">真实</span></div>
+            <h3>鉴黄师日均审核量拆解</h3>
+            <p>图片、短视频、直播三种形态的单条耗时差异很大，绩效指标往往按"有效判定条数"计算，而非简单总数。</p>
+            <div class="card-meta"><span>适合：求职评估</span><b>关注 7.4k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c3"><span>心理压力从哪来</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag">心理健康</span><span class="tag">职业体验</span></div>
+            <h3>负面内容暴露的应对方式</h3>
+            <p>长期接触违规内容会带来情绪钝化与倦怠，轮岗、限时、心理疏导机制是行业里被反复讨论的解法。</p>
+            <div class="card-meta"><span>适合：长期从业者</span><b>关注 6.9k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c4"><span>入行要什么条件</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag new">入行</span><span class="tag">学历</span><span class="tag">门槛</span></div>
+            <h3>鉴黄师入行要求清单</h3>
+            <p>学历多为大专及以上，真正拉开差距的是稳定性、细致度与规则理解力，部分岗位对年龄与轮班有明确要求。</p>
+            <div class="card-meta"><span>适合：投递前</span><b>关注 9.1k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c5"><span>薪资到底多少</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag">薪资</span><span class="tag hot">热议</span><span class="tag">前景</span></div>
+            <h3>鉴黄师薪资构成与区间</h3>
+            <p>基础薪资+绩效+夜班补贴是常见结构，城市与外包/直招差异明显，涨薪更多取决于岗位层级而非年限。</p>
+            <div class="card-meta"><span>适合：职业规划</span><b>关注 10.2k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c6"><span>AI 会取代吗</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag">技术趋势</span><span class="tag">职业前景</span></div>
+            <h3>机审与人工审核的分工</h3>
+            <p>模型负责高召回初筛，人工负责边界判定与申诉复核。鉴黄师的岗位不会消失，但能力要求正在上移。</p>
+            <div class="card-meta"><span>适合：长期规划</span><b>关注 8.3k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c7"><span>判定争议怎么破</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag">流程</span><span class="tag">复核</span></div>
+            <h3>尺度不一致的处理机制</h3>
+            <p>通过双人复核、案例拉齐、质检抽检三层机制收敛分歧，是成熟团队控制误判率的常规做法。</p>
+            <div class="card-meta"><span>适合：团队管理者</span><b>关注 5.8k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c8"><span>外包还是直招</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag">就业选择</span><span class="tag">合同</span></div>
+            <h3>两种用工模式的差别</h3>
+            <p>外包岗入门快、流动性高；平台直招门槛更高但晋升通道更清晰。选择前先想清楚自己图什么。</p>
+            <div class="card-meta"><span>适合：求职对比</span><b>关注 6.2k</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-cover c9"><span>转行能去哪</span></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag">转型</span><span class="tag">技能</span></div>
+            <h3>鉴黄师的技能迁移路径</h3>
+            <p>规则理解、风险意识、数据处理是三项可迁移能力，可向风控运营、社区治理、内容策略方向延伸。</p>
+            <div class="card-meta"><span>适合：2年以上从业者</span><b>关注 5.4k</b></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section id="update">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师最新<span>动态与更新</span></h2>
+          <p>岗位招聘、行业规则、团队实践的最新变化，按时间倒序整理。</p>
+        </div>
+        <a class="sec-more" href="/#news">查看资讯 →</a>
+      </div>
+      <ul class="updates">
+        <li><span class="t">2026-11-07</span><span class="n">多家平台更新内容审核细则<small>新增未成年人相关判定条目，鉴黄师培训案例库同步补充</small></span><span class="s">规则更新</span></li>
+        <li><span class="t">2026-11-06</span><span class="n">某内容安全团队开放审核员招聘<small>要求大专及以上，接受轮班，提供系统化新人培训</small></span><span class="s">招聘</span></li>
+        <li><span class="t">2026-11-05</span><span class="n">审核外包公司上线质检双复核机制<small>针对尺度不一致问题，增加抽检比例与案例拉齐会议</small></span><span class="s">流程</span></li>
+        <li><span class="t">2026-11-04</span><span class="n">直播巡查岗增加实时处置演练<small>要求鉴黄师在限定时间内完成判定与上报动作</small></span><span class="s">培训</span></li>
+        <li><span class="t">2026-11-03</span><span class="n">机审模型升级，初筛召回率提升<small>人工审核重心进一步向边界案例与申诉复核转移</small></span><span class="s">技术</span></li>
+        <li><span class="t">2026-11-02</span><span class="n">行业讨论：审核员心理支持机制<small>轮岗、限时、心理疏导被列为团队管理重点议题</small></span><span class="s">行业</span></li>
+        <li><span class="t">2026-11-01</span><span class="n">新一期鉴黄师岗位能力测评开放<small>覆盖标准记忆、边界判断、记录规范三个维度</small></span><span class="s">测评</span></li>
+        <li><span class="t">2026-10-30</span><span class="n">内容审核员职业路径分享会举行<small>多位从业者分享从审核到质检、策略的转型经验</small></span><span class="s">活动</span></li>
+        <li><span class="t">2026-10-28</span><span class="n">部分平台调整夜班补贴标准<small>夜班与节假日排班的补贴结构出现新的调整</small></span><span class="s">待遇</span></li>
+        <li><span class="t">2026-10-26</span><span class="n">案例库新增暗语与变体识别专题<small>文本审核方向增加了谐音、拆字、符号替代等识别训练</small></span><span class="s">案例</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section id="deep">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师深度解析：<span>这份工作到底在做什么</span></h2>
+          <p>从审核对象、判定逻辑到职业体验，把岗位拆成可理解的部分。</p>
+        </div>
+      </div>
+      <div class="article">
+        <h3>一、鉴黄师的审核对象远比名字更宽</h3>
+        <p>很多人对鉴黄师的第一印象停留在"看涉黄内容"，但真实工作范围要宽得多。以主流内容平台的审核体系为例，审核对象通常被划分为四类：第一类是色情与低俗内容，包括裸露、性暗示、擦边画面与文字；第二类是暴力血腥与危险行为，如自残、斗殴、危险挑战；第三类是违禁与违法信息，包括涉赌涉诈、违禁品交易、虚假宣传；第四类是涉及未成年人的不当内容与隐私侵权。鉴黄师日常需要在多条规则之间快速切换，而不是只盯一个方向。</p>
+        <p>这也解释了为什么岗位培训往往从"规则地图"开始。新人要先建立整体框架，知道每类内容对应哪条规则、判定后走哪个处置流程，再逐步深入到具体案例。只背零散条目，遇到复合场景就会卡住。</p>
+
+        <h3>二、判定逻辑：标准、场景与边界</h3>
+        <p>鉴黄师的核心工作可以概括为三个动作：识别、判定、记录。识别靠注意力与经验，判定靠标准与场景理解，记录靠规范与一致性。三者缺一不可。同一张图片，出现在医疗科普、新闻现场、艺术创作还是普通用户分享中，结论可能完全不同。因此成熟团队通常会给出"场景豁免"与"上下文要求"，要求鉴黄师不能脱离语境单独判图。</p>
+        <p>边界案例是这份工作最耗神的部分。规则写得再细，也无法穷尽所有情况，于是团队会建立案例库，把争议案例沉淀下来，形成内部共识。鉴黄师遇到拿不准的内容，正确做法不是硬判，而是标记待复核，交由质检或组长拉齐尺度。这个机制看起来降低了效率，实际上是在保护判定质量与从业者本人。</p>
+
+        <h3>三、不同审核形态的节奏差异</h3>
+        <p>图片审核讲究快与准，单条耗时短，但重复度高，对标准记忆要求最严；视频审核需要抽帧与回看，单条耗时长，节奏更接近"沉浸式"；直播巡查实时性最高，鉴黄师往往要在几秒内完成判断并触发处置，压力集中在反应速度；文本审核则侧重语义理解，暗语、谐音、拆字、符号替代都是常见难点。不同形态对能力的要求并不相同，转岗时通常需要重新适应。</p>
+
+        <h3>四、心理压力与职业倦怠</h3>
+        <p>长期高频接触负面内容，是鉴黄师绕不开的现实问题。情绪钝化、注意力疲劳、对内容产生抵触，都是从业者反馈中反复出现的体验。行业里较常见的应对方式包括：控制单次连续工作时长、安排轮岗、设置心理疏导渠道、在团队内建立互相支持的氛围。对求职者来说，提前了解这一点，比入职后被动适应更重要。</p>
+
+        <h3>五、机审与人审的分工正在变化</h3>
+        <p>随着模型能力提升，高召回初筛已经能承担大量明显违规内容的识别，人工审核的重心正在向边界案例、申诉复核、规则反馈转移。这不意味着鉴黄师会被取代，而是岗位能力要求在上移：既要懂标准，也要能理解模型输出的置信度，还要能把误判案例反馈给策略侧。对从业者来说，这反而是向质检、策略、风控方向发展的机会。</p>
+
+        <h3>六、搜索"鉴黄师"的人通常在找什么</h3>
+        <p>从搜索意图看，大多数人关心的是四件事：这份工作具体做什么、需要什么条件、能拿多少薪资、能不能长期做。本页按这个顺序组织内容，就是为了让读者能快速建立完整认知，而不是被猎奇描述带偏。如果你正准备投递，建议重点看入行要求与工作内容两节；如果你已经入行，深度解析与体验指南会更实用。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据看板 -->
+  <section id="data">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师<span>数据看板</span></h2>
+          <p>基于公开讨论与行业交流整理的模拟参考数据，仅用于建立量级认知。</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>6-9k</b><span>一线城市初级岗位月薪区间</span></div>
+        <div class="stat"><b>800+</b><span>图片审核日均有效判定参考量</span></div>
+        <div class="stat"><b>3-6月</b><span>新人达到稳定尺度的常见周期</span></div>
+        <div class="stat"><b>65%</b><span>机审初筛可拦截的明显违规占比</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师岗位<span>体验指南</span></h2>
+          <p>从投递、面试到入职适应，把关键节点说清楚。</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card"><div class="card-body">
+          <div class="card-tags"><span class="tag new">投递</span><span class="tag">简历</span></div>
+          <h3>简历里该突出什么</h3>
+          <p>细致度、稳定性、规则理解力是审核岗最看重的三项。有内容运营、客服、数据标注经验可以重点写，轮班接受度要提前说明。</p>
+          <div class="card-meta"><span>建议：写具体案例</span><b>优先级 高</b></div>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <div class="card-tags"><span class="tag">面试</span><span class="tag hot">高频</span></div>
+          <h3>面试常考哪几类题</h3>
+          <p>多为情景判断题：给出一段描述，问你会怎么判、依据哪条规则、后续怎么记录。重点考察判断逻辑而非"见得多"。</p>
+          <div class="card-meta"><span>建议：说清依据</span><b>优先级 高</b></div>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <div class="card-tags"><span class="tag">入职</span><span class="tag">适应</span></div>
+          <h3>前两周怎么熬过去</h3>
+          <p>先吃透规则框架，再跟案例库练手，遇到拿不准的及时标记待复核。不要追求速度，先保证尺度稳定。</p>
+          <div class="card-meta"><span>建议：慢就是快</span><b>优先级 中</b></div>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <div class="card-tags"><span class="tag">长期</span><span class="tag">健康</span></div>
+          <h3>怎么降低职业损耗</h3>
+          <p>控制连续工作时长、主动申请轮岗、下班后做内容隔离，都是从业者反馈中比较有效的做法。别硬扛。</p>
+          <div class="card-meta"><span>建议：建立边界</span><b>优先级 高</b></div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师<span>常见问题</span></h2>
+          <p>围绕入行、工作内容、薪资与前景，整理了 6 个高频问答。</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>鉴黄师具体每天做什么？</summary>
+          <div class="ans">日常主要是对平台上的图片、视频、直播画面和文本内容做违规识别与判定。工作流程一般是：系统分发任务或实时巡查，鉴黄师按审核标准判断是否违规、属于哪一类违规，然后选择对应处置动作并填写记录。遇到拿不准的内容会标记待复核，交由质检或组长确认。除此之外，还要参加规则更新培训、案例拉齐会议，部分岗位需要参与质检抽检。</div>
+        </details>
+        <details>
+          <summary>做鉴黄师需要什么学历和条件？</summary>
+          <div class="ans">多数岗位要求大专及以上学历，专业限制不严，更看重细致度、稳定性和规则理解力。硬性条件通常包括：能接受轮班（含夜班）、无相关不良记录、具备基本电脑操作与打字速度。部分平台会加测情景判断题，考察你在模糊场景下的判断逻辑。外语能力、内容运营经验、数据标注经验属于加分项，但不是必需。</div>
+        </details>
+        <details>
+          <summary>鉴黄师薪资大概是什么水平？</summary>
+          <div class="ans">薪资结构多为"基础工资+绩效+夜班补贴"，不同城市、直招与外包之间差异明显。一线城市初级岗位月薪常见在 6-9k 区间，有经验或带质检职责的岗位会更高。需要提醒的是，绩效与判定量、准确率挂钩，单纯追求数量反而可能拉低准确率，影响整体收入。谈薪时建议问清绩效计算方式和夜班补贴标准。</div>
+        </details>
+        <details>
+          <summary>长期看负面内容会不会有心理问题？</summary>
+          <div class="ans">这是真实存在的职业风险，行业里并不回避。常见表现包括情绪钝化、注意力疲劳、对内容产生抵触。较成熟的团队会通过控制连续工作时长、安排轮岗、提供心理疏导渠道来缓解。个人层面，下班后做内容隔离、保持规律作息、主动和同事交流，都是从业者反馈中比较有效的做法。如果长期感到明显不适，应及时调整岗位或寻求专业帮助。</div>
+        </details>
+        <details>
+          <summary>AI 审核越来越强，鉴黄师会被取代吗？</summary>
+          <div class="ans">短期内不会被完全取代，但岗位内涵在变化。模型擅长高召回初筛，能拦截大量明显违规内容；人工审核的价值集中在边界案例、场景判断、申诉复核和规则反馈上。也就是说，重复性判定会减少，对标准理解、案例分析和策略沟通的要求会提高。对从业者来说，主动向质检、策略、风控方向积累能力，是更稳妥的路径。</div>
+        </details>
+        <details>
+          <summary>想入行应该先准备什么？</summary>
+          <div class="ans">建议分三步：第一，先了解主流平台的内容规则框架，建立分类认知；第二，练习情景判断，重点训练"依据哪条规则、为什么这样判"的表达能力；第三，准备好能体现细致度和稳定性的经历描述。面试时不要只回答"违规"或"不违规"，要把判断依据和后续处置说清楚。入职后前两周以稳定尺度为目标，不要急于冲量。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section id="comments">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师<span>用户评论</span></h2>
+          <p>来自从业者与求职者的真实讨论，观点不代表本页立场。</p>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="cmt"><div class="cmt-top"><span class="avatar">林</span><b>林间有风</b><time>2026-11-06</time></div><p>做了快两年图片审核，最大的感受是标准一定要吃透。刚开始总想靠"感觉"判，结果质检一抽就出问题，后来老老实实按规则走，反而稳了。</p><span class="like">赞同 42</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">陈</span><b>陈默不沉默</b><time>2026-11-05</time></div><p>轮班是真的累，尤其夜班。但团队氛围还行，遇到争议案例会一起拉齐，不会让你一个人扛。想入行的先想清楚能不能接受作息不规律。</p><span class="like">赞同 37</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">苏</span><b>苏打水加冰</b><time>2026-11-05</time></div><p>面试问的情景题比想象中细，不是简单问违不违规，而是问你会怎么记录、后续怎么处置。准备的时候最好把流程也过一遍。</p><span class="like">赞同 29</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">赵</span><b>赵小满</b><time>2026-11-04</time></div><p>说实话这岗位没有外面传的那么神秘，就是个需要高度专注的审核工作。重复度高，耐心不够的人做不久。</p><span class="like">赞同 51</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">周</span><b>周周在追更</b><time>2026-11-03</time></div><p>心理压力这块建议新人都重视一下。我前三个月还好，半年后明显对内容有点抵触，后来申请调了白班才缓过来。</p><span class="like">赞同 63</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">吴</span><b>吴所谓先生</b><time>2026-11-03</time></div><p>机审确实越来越强了，现在明显违规的基本轮不到人判。但边界案例还是得人来，尤其是医疗、新闻、艺术这几个场景，模型经常判不准。</p><span class="like">赞同 45</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">何</span><b>何止于言</b><time>2026-11-02</time></div><p>外包和直招差别挺大的，外包入门快但晋升通道窄，直招门槛高一点但能接触到策略侧的东西。想长期做的建议往直招方向努力。</p><span class="like">赞同 33</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">许</span><b>许多多</b><time>2026-11-01</time></div><p>文本审核的暗语识别真的难，谐音、拆字、符号替代花样太多，案例库更新速度跟不上。这块比看图累多了。</p><span class="like">赞同 26</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">郑</span><b>郑在输入</b><time>2026-10-31</time></div><p>薪资这块不要只听招聘写的高区间，绩效占比很大。问清楚考核口径再决定，不然到手和预期差不少。</p><span class="like">赞同 48</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">黄</span><b>黄昏收集者</b><time>2026-10-30</time></div><p>从审核转质检半年了，视角完全不一样。以前只管判，现在要想到底为什么这个尺度会和别人不一样，反而更理解规则了。</p><span class="like">赞同 31</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">刘</span><b>刘浪的猫</b><time>2026-10-29</time></div><p>我是做直播巡查的，实时性压力最大。几秒钟内要判断还要触发处置，刚开始手都在抖。练多了就好，但确实需要反应快。</p><span class="like">赞同 22</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">孙</span><b>孙大圣不吃桃</b><time>2026-10-28</time></div><p>客观说一句，这岗位不是所有人都适合。细致、耐得住、能接受轮班，三个缺一个都容易干不长。</p><span class="like">赞同 57</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">马</span><b>马不停蹄</b><time>2026-10-27</time></div><p>案例库真的很重要。我们团队每周拉一次争议案例，讨论完统一口径，新人成长速度明显快很多。</p><span class="like">赞同 19</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">郭</span><b>郭外青山</b><time>2026-10-26</time></div><p>想知道这行做久了能不能转风控运营，有过来人说说吗？感觉审核做久了会有点天花板。</p><span class="like">赞同 24</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">杨</span><b>杨树底下</b><time>2026-10-25</time></div><p>转风控是可以的，但要自己补数据分析和规则拆解的能力。光靠审核经验不够，得能说明白误判率为什么高。</p><span class="like">赞同 36</span></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar">冯</span><b>冯先生很忙</b><time>2026-10-24</time></div><p>整体看下来，这页把工作内容讲得比较实在，没怎么渲染猎奇。想入行的看完基本能判断自己适不适合。</p><span class="like">赞同 41</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>鉴黄师<span>相关资讯</span></h2>
+          <p>内容安全行业的规则、技术与职业话题动态。</p>
+        </div>
+      </div>
+      <div class="news">
+        <article class="news-card">
+          <time>2026-11-07</time>
+          <h3>内容审核细则再更新，未成年人相关判定被重点关注</h3>
+          <p>多家平台同步更新审核条目，鉴黄师培训案例库新增对应场景，判定口径进一步统一。</p>
+        </article>
+        <article class="news-card">
+          <time>2026-11-05</time>
+          <h3>质检双复核机制在审核团队中普及</h3>
+          <p>针对尺度不一致问题，团队通过提高抽检比例与定期案例拉齐来收敛分歧，误判率明显下降。</p>
+        </article>
+        <article class="news-card">
+          <time>2026-11-03</time>
+          <h3>机审模型升级，人工审核重心向边界案例转移</h3>
+          <p>初筛召回率提升后，鉴黄师的日常工作更多集中在场景判断、申诉复核与规则反馈上。</p>
+        </article>
+        <article class="news-card">
+          <time>2026-11-01</time>
+          <h3>审核员心理支持机制成为团队管理重点议题</h3>
+          <p>轮岗、限时工作、心理疏导渠道被反复讨论，从业者对职业健康的关注度持续上升。</p>
+        </article>
+        <article class="news-card">
+          <time>2026-10-29</time>
+          <h3>内容审核员职业路径分享会举行</h3>
+          <p>多位从业者分享从审核到质检、策略、风控的转型经验，强调规则理解与数据能力的结合。</p>
+        </article>
+        <article class="news-card">
+          <time>2026-10-26</time>
+          <h3>案例库新增暗语与变体识别专题</h3>
+          <p>文本审核方向增加谐音、拆字、符号替代等训练内容，帮助鉴黄师提升语义识别能力。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 订阅 -->
+  <section id="subscribe">
+    <div class="wrap">
+      <div class="subscribe">
+        <div>
+          <h2>订阅鉴黄师岗位动态</h2>
+          <p>规则更新、招聘变化、从业者经验，整理成不定期简报，帮你在做职业判断时少走弯路。</p>
+        </div>
+        <form class="sub-form" onsubmit="return false;">
+          <input type="email" placeholder="输入邮箱，接收专题更新">
+          <button type="button">订阅</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <h3>鉴黄师观察站</h3>
+        <p>聚焦内容安全审核岗位的职业百科与行业观察，围绕鉴黄师工作内容、审核流程、入行要求与职业前景提供系统化参考。</p>
+        <p>本站内容为行业信息整理与经验汇编，不构成任何职业承诺或法律意见。</p>
+      </div>
+      <div class="foot-col">
+        <h4>专题栏目</h4>
+        <ul>
+          <li><a href="/#hot">热门推荐</a></li>
+          <li><a href="/#update">最新动态</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#data">数据看板</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>实用入口</h4>
+        <ul>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>友情链接</h4>
+        <ul>
+          <li><a href="/#top">内容安全百科</a></li>
+          <li><a href="/#top">职业信息参考</a></li>
+          <li><a href="/#top">行业观察专栏</a></li>
+          <li><a href="/#top">链接位招租</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 鉴黄师观察站 · 内容仅供职业认知参考</span>
+      <span>免责声明：本页数据含模拟整理内容，不构成就业与薪资承诺</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+                                                                                                                                              </html>
